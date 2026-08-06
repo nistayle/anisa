@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio: Anisa Tri Hanan</title>
+  
+  <!-- Font Google Inter & Typewriter Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Glow Overlay yang Mengikuti Kursor -->
+<div class="cursor-glow"></div>
+  <div class="page-container">
+    <!-- Navbar Header -->
+    <header>
+      <div class="logo">
+        <span class="logo-icon"></span>
+        <span>Anisa Tri Hanan</span>
+      </div>
+      <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About me</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact" class="btn-contact-nav">Contact me</a>
+      </nav>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="hero">
+      <div class="hero-content">
+        <p class="subtitle-script">Anisa Tri Hanan</p>
+        <h1 class="hero-title">Exploring AI Product Development & Data Science</h1>
+        <p class="hero-description">
+          Undergraduate student at Politeknik Elektronika Negeri Surabaya, majoring in Digital Business. Passionate about AI product development and data science, I am dedicated to creating innovative solutions that Leverage technology to solve real-world problems.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Contact me</a>
+          <a href="#projects" class="btn-secondary">View projects</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <!-- FLOATING BADGE 1: KIRI ATAS -->
+        <div class="floating-badge badge-top">
+            <span class="badge-icon">👋</span>
+            <div class="badge-text">
+            <strong>Hello world!</strong>
+            <p>This is Anisa speaking...</p>
+            </div>
+        </div>
+
+        <!-- FLOATING BADGE 3 (BARU): TENGAH / AREA KURSOR -->
+        <div class="floating-badge badge-center">
+            <span class="badge-icon">⚡</span>
+            <div class="badge-text">
+            <strong>AI Enthusiast</strong>
+            <p>Exploring ML Models</p>
+            </div>
+        </div>
+
+        <!-- GIF Portret Kamu -->
+        <img src="assets/meme.gif" alt="Vector Portrait" class="hero-image" />
+        
+        <!-- FLOATING BADGE 2: KIRI BAWAH -->
+        <div class="floating-badge badge-bottom">
+            <span class="status-dot"></span>
+            <div class="badge-text">
+            <strong>Welcome to My Portfolio</strong>
+            <p>Data Science & AI Development</p>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Lower Section Preview -->
+    <section class="portfolio-section reveal" id="portfolio">
+      <p class="portfolio-tag">PORTFOLIO</p>
+      <h2 class="portfolio-title">Discover what I've created</h2>
+      <p class="portfolio-subtitle">Each project reflects my passion for innovation and commitment to delivering</p>
+
+        <div class="projects-grid">
+
+  <!-- BOX PROJECT 1 -->
+  <div class="project-card">
+    <div class="project-image-wrapper">
+      <!-- Ganti src dengan lokasi gambar/GIF project Anda -->
+      <img src="assets/2.png" alt="Project 1" class="project-image" />
+    </div>
+    <div class="project-info">
+      <h3 class="project-title">LajuRaya AI: AI Early Warning System untuk prediksi banjir rob di Kota Semarang</h3>
+      <p class="project-description">
+LajuRaya SMG adalah platform yang dirancang untuk memprediksi banjir rob yang ada tiga area potensial (dekat dengan kawasan industri). Serta menghadirkan peringatan dini guna membantu mobilitas pekerja perempuan di Kota Semarang.      </p>
+      <div class="tech-stack">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Random Forest Classifier</span>
+        <span class="tech-badge">Ultralytics Yolov8</span>
+      </div>
+      <a href="https://lajuraya-smg.vercel.app" target="_blank" class="btn-visit">
+        Kunjungi Project ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- BOX PROJECT 2 -->
+  <div class="project-card">
+    <div class="project-image-wrapper">
+      <img src="assets/1.png" alt="Project 2" class="project-image" />
+    </div>
+    <div class="project-info">
+      <h3 class="project-title">GarasiKu: AI-optimized Smart Parking Platform dengan fitur Live Crowd Status</h3>
+      <p class="project-description">
+        GarasiKu adalah platform smart parking berbasis komunitas yang menghubungkan pencari parkir dengan pemilik lahan lokal secara real-time. Website dilengkapi dengan fitur crowd status yang menunjukkan tingkat kepadatan parkir.
+      </p>
+      <div class="tech-stack">
+        <span class="tech-badge">VibeCoding: Google AI Studio</span>
+        <span class="tech-badge">Gemini API</span>
+        <span class="tech-badge">Superbase</span>
+      </div>
+      <a href="https://garasiku-198521443318.asia-southeast1.run.app/dashboard" target="_blank" class="btn-visit">
+        Kunjungi Project ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- BOX PROJECT 3 (Bisa Tambah/Hapus Sesuka Hati) -->
+  <div class="project-card">
+    <div class="project-image-wrapper">
+      <img src="assets/3.jpg" alt="Project 3" class="project-image" />
+    </div>
+    <div class="project-info">
+      <h3 class="project-title">(On Progress) AI-Resistant Digital Asset Protection & Invisible Authentication System for Creators</h3>
+      <p class="project-description">
+        Melindungi Hak Cipta dan Hak Kepemilikan Digital Kreator dari Unconsented AI Scraping & Intellectual Property Theft.
+        AI dilatih (trained) untuk mengenali dan mengekstrak sinyal tersembunyi (invisible signal) yang disisipkan ke dalam gambar.      
+        </p>
+      <div class="tech-stack">
+        <span class="tech-badge">CNN/Encoder</span>
+        <span class="tech-badge">Adversarial Noise</span>
+        <span class="tech-badge">Frequency Domain</span>
+      </div>
+      <a href="#" target="_blank" class="btn-visit">
+        On Progress
+      </a>
+    </div>
+  </div>
+
+</div>
+    </section>
+
+  <section class="about-section reveal" id="about">
+  <div class="about-header">
+    <span class="about-tag">// ABOUT ME</span>
+    <h2 class="about-title">Bridging data, tech, and real-world impact.</h2>
+  </div>
+
+  <div class="about-grid">
+    <!-- Kolom Kiri: Narasi -->
+    <div class="about-text">
+      <p>
+        Halo! Saya <strong>Anisa Tri Hanan</strong>, mahasiswi Digital Business di Politeknik Elektronika Negeri Surabaya (PENS). Saya memiliki ketertarikan mendalam pada eksplorasi <strong>AI Product Development</strong> dan <strong>Data Science</strong>.
+      </p>
+      <p>
+        Perjalanan saya di dunia teknologi dimulai dari rasa penasaran untuk membangun proyek berbasis AI yang mampu memberikan solusi nyata—seperti sistem prediksi risiko bencana hingga eksplorasi ide bisnis digital. Saya senang mempelajari hal baru, mulai dari dasar bahasa pemrograman web hingga eksperimen model pembelajaran mesin.
+      </p>
+      <p>
+        Saat ini, saya terus mengasah kemampuan teknis dan berkolaborasi dalam berbagai proyek serta ekosistem inovasi teknologi.
+      </p>
+    </div>
+
+    <!-- Kolom Kanan: Quick Cards -->
+    <div class="about-cards">
+      <!-- Card 1: Core Focus -->
+      <div class="bento-card">
+        <div class="bento-title">🎯 Main Focus</div>
+        <div class="skills-list">
+          <span class="skill-item">AI Product Dev</span>
+          <span class="skill-item">Data Analytics</span>
+          <span class="skill-item">Digital Business</span>
+          <span class="skill-item">Web Tech</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Tech & Tools -->
+      <div class="bento-card">
+        <div class="bento-title">🛠️ Tech & Tools</div>
+        <div class="skills-list">
+          <span class="skill-item">Python</span>
+          <span class="skill-item">HTML / CSS</span>
+          <span class="skill-item">JavaScript</span>
+          <span class="skill-item">Next.js</span>
+          <span class="skill-item">Git & GitHub</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Button Resume -->
+      <a href="assets/resume.pdf" target="_blank" class="btn-resume">
+        📄 Download Resume / CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="kaggle-profile-card">
+  
+  <!-- Hiasan Bentuk Kaggle di Kanan Atas -->
+  <svg class="kaggle-shapes" viewBox="0 0 120 120" fill="none">
+    <path d="M120 0H70C70 30 90 50 120 50V0Z" fill="#FABB05" />
+    <path d="M120 20C85 20 65 50 65 120H120V20Z" fill="#34A853" />
+    <path d="M120 60C95 60 80 85 80 120H120V60Z" fill="#4285F4" />
+  </svg>
+
+  <div class="kaggle-content reveal">
+    <!-- Foto Profil Avatar -->
+    <div class="avatar-wrapper">
+      <!-- Ganti src di bawah ini dengan foto profil kamu -->
+      <img src="assets/pfp.png" alt="Anisa Tri Hanan" class="avatar-img" />
+    </div>
+
+    <!-- Informasi Profil -->
+    <div class="profile-info">
+      <span class="username">nistayle</span>
+      <h3 class="full-name">Anisa Tri Hanan</h3>
+      <p class="subtitle">digibiz pens'26</p>
+
+      <div class="details-list">
+        <!-- Pronouns -->
+        <div class="detail-item">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          <span>Pronouns: she/her</span>
+        </div>
+
+        <!-- Student Info -->
+        <div class="detail-item">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+          <span>Student at Electronic Engineering Polytechnic Institute of Surabaya</span>
+        </div>
+
+        <!-- Location -->
+        <div class="detail-item">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>Surabaya, East Java, Indonesia</span>
+        </div>
+
+        <!-- Joined Date -->
+        <div class="detail-item">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.89-1.99 2L3 19c0 1.10.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+          <span>Joined a year ago · last seen in the past day</span>
+        </div>
+      </div>
+
+      <!-- Button Kunjungi Profil Kaggle -->
+      <!-- Ganti href dengan URL profil Kaggle kamu -->
+      <a href="https://www.kaggle.com/nistayle" target="_blank" class="btn-kaggle">
+        Visit Kaggle Profile ↗
+      </a>
+    </div>
+  </div>
+</div>
+
+<section class="cert-section reveal" id="certifications">
+  <div class="cert-header">
+    <span class="cert-tag">// LEARNING & CREDENTIALS</span>
+    <h2 class="cert-title">Certifications & Programs</h2>
+  </div>
+
+  <div class="cert-grid">
+    <!-- KOLOM KIRI: Box Foto Kegiatan -->
+    <div class="cert-photo-card">
+      <!-- Ganti src dengan foto kegiatan kamu -->
+      <img src="assets/pi.jpg" alt="Kegiatan Program" class="cert-photo" />
+      
+      <div class="cert-photo-overlay">
+        <h4>Tech & Innovation Journey</h4>
+        <p>Dokumentasi aktivitas program & proyek inovasi berbasis AI.</p>
+      </div>
+    </div>
+
+    <!-- KOLOM KANAN: Text Box Sertifikasi -->
+    <div class="cert-list">
+
+      <!-- ITEM 1: Program Sedang Berjalan (Ongoing) -->
+      <div class="cert-item-card">
+        <div class="cert-info">
+          <h3 class="cert-name">Perempuan Inovasi Program</h3>
+          <span class="cert-issuer">Perempuan Inovasi</span>
+          <p class="cert-meta">Fokus: Tech Language Basics & AI Project Development</p>
+        </div>
+        <div class="cert-action">
+          <span class="status-badge ongoing">● Ongoing</span>
+        </div>
+      </div>
+
+      <!-- ITEM 2: Sertifikat Selesai -->
+      <div class="cert-item-card">
+        <div class="cert-info">
+          <h3 class="cert-name">Linear Regression: ML Competition</h3>
+          <span class="cert-issuer">Komdigi X Yandex</span>
+          <p class="cert-meta">Fokus: Machine Learning Fundamentals</p>
+        </div>
+        <div class="cert-action">
+          <span class="status-badge ongoing">● Ongoing</span>
+        </div>
+      </div>
+
+      <!-- ITEM 3: Sertifikat Selesai -->
+      <div class="cert-item-card">
+        <div class="cert-info">
+          <h3 class="cert-name">Intermediate Data Science and AI</h3>
+          <span class="cert-issuer">OmahTI Academy</span>
+          <p class="cert-meta">Diterbitkan: 2026 · Credential ID: 789101</p>
+        </div>
+        <div class="cert-action">
+          <span class="status-badge completed">Completed</span>
+          <a href="#" target="_blank" class="btn-cert-link">Lihat Bukti ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact-section reveal" id="contact">
+  <div class="contact-header">
+    <span class="contact-tag">// GET IN TOUCH</span>
+    <h2 class="contact-title">Let's connect and build together.</h2>
+  </div>
+
+  <div class="contact-grid">
+    <!-- KOLOM KIRI: Tautan Sosial Media -->
+    <div class="contact-info">
+      <p class="contact-desc">
+        Tertarik untuk berkolaborasi dalam proyek AI, eksplorasi data, atau sekadar berdiskusi seputar teknologi? Jangan ragu untuk terhubung dengan saya!
+      </p>
+
+      <div class="social-links">
+        <!-- LinkedIn -->
+        <a href="hhttps://www.linkedin.com/in/anisatrihanan/" target="_blank" class="social-card">
+          <svg class="social-icon" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/></svg>
+          <div class="social-text">
+            <strong>LinkedIn</strong>
+            <span>Connect professionally</span>
+          </div>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/nistayle" target="_blank" class="social-card">
+          <svg class="social-icon" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+          <div class="social-text">
+            <strong>GitHub</strong>
+            <span>Explore my code repositories</span>
+          </div>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/anisahanan_" target="_blank" class="social-card">
+          <svg class="social-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <div class="social-text">
+            <strong>Instagram</strong>
+            <span>Follow my journey</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- KOLOM KANAN: Form Send Email -->
+    <div class="email-form-card">
+      <form action="mailto:anisathanan@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="Name" placeholder="John Doe" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="Email" placeholder="john@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-send">Send Message ✉️</button>
+      </form>
+    </div>
+  </div>
+</section>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <p>© 2026 Anisa Tri Hanan. All rights reserved.</p>
+    <p>Built with <span class="footer-heart">♥</span> using HTML & CSS</p>
+  </div>
+</footer>
+
+<script>
+  const glow = document.querySelector('.cursor-glow');
+
+  window.addEventListener('mousemove', (e) => {
+    // Mengirim koordinat kursor X dan Y ke CSS Variable
+    glow.style.setProperty('--cursor-x', `${e.clientX}px`);
+    glow.style.setProperty('--cursor-y', `${e.clientY}px`);
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    // Ambil semua elemen yang memiliki class .reveal
+    const revealElements = document.querySelectorAll(".reveal");
+
+    // Konfigurasi Intersection Observer
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.15 // Elemen akan muncul jika 15% bagiannya sudah masuk ke layar
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Tambahkan class active untuk memicu animasi CSS
+          entry.target.classList.add("active");
+          // Hentikan pemantauan pada elemen ini agar animasi tidak berulang-ulang
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Daftarkan setiap elemen ke observer
+    revealElements.forEach((el) => revealObserver.observe(el));
+  });
+</script>
+</body>
+</html>
