@@ -793,6 +793,60 @@
     transform: translateX(4px);
   }
 
+/* Thumbnail Box Sertifikat */
+.cert-thumb {
+  flex-shrink: 0;
+  width: 85px;
+  height: 65px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f1f3f5;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cert-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Menjaga aspek rasio gambar agar tidak gepeng */
+  display: block;
+}
+
+/* Info Text (Fleksibel mengisi ruang tengah) */
+.cert-info {
+  flex: 1;
+  min-width: 0; /* Mencegah overflow text panjang */
+}
+
+/* Action / Badge / Link (Tetap di kanan) */
+.cert-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Responsif untuk Layar Mobile */
+@media (max-width: 640px) {
+  .cert-item-card {
+    flex-wrap: wrap;
+  }
+
+  .cert-thumb {
+    width: 70px;
+    height: 55px;
+  }
+
+  .cert-action {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.08);
+  }
+}
+
   .cert-info {
     display: flex;
     flex-direction: column;
